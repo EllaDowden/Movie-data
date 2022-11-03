@@ -33,5 +33,3 @@ let moviedata = {
     cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
   },
 };
-
-const movieGallery = document.querySelector(".movie-gallery");
