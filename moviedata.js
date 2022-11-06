@@ -1,4 +1,4 @@
-let moviedata = {
+let movieData = {
   "The Darjeeling Limited": {
     plot: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
     cast: ["Jason Schwartzman", "Owen Wilson", "Adrien Brody"],
