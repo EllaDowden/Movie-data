@@ -1,3 +1,4 @@
+function(){
 let movieData = {
   "The Darjeeling Limited": {
     plot: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
@@ -33,25 +34,5 @@ let movieData = {
     cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
   },
 };
+};
 
-  let movie = function (title, plot, cast, runtime, rating, year) {
-    this.title = title;
-    this.plot = plot;
-    this.cast = cast;
-    this.runtime = runtime;
-    this.rating = rating;
-    this.year = year; 
-  }
-
-  importMovieData = function (catalogue, movies) {
-    Object.keys(movies).forEach(title => {
-      catalogue.push(new Movie(
-         title,
-      movies[title].rating,
-      movies[title].runtime,
-      movies[title].year,
-      movies[title].plot,
-      movies[title].cast,
-      );
-      });
-  }
