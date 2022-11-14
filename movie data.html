@@ -9,7 +9,9 @@
   </head>
   <body>
     <header>
-      <a href="#"><h1>Movie Data Project</h1></a>
+      <h1 class="title">Movie Data Project</h1>
+      <br />
+
       <form id="form">
         <input type="text" id="search" placeholder="search" class="search" />
       </form>
@@ -19,11 +21,11 @@
         <section class="card">
           <img
             class="grandBudapestHotel"
-            src="https://i.ytimg.com/vi/uC4n3_EK_kA/movieposter.jpg"
+            src="./grand budapest hotel.jpg"
             alt="The Grand Budapest Hotel Poster"
           />
           <div class="contentCard">
-            <h3 class="title"></h3>
+            <h3 class="title">this is the content card</h3>
             <ul class="content">
               <li class="rating"></li>
               <li class="runtime"></li>
@@ -37,7 +39,7 @@
         <section class="card">
           <img
             class="fantasticMrFox"
-            src="https://static.tvtropes.org/pmwiki/pub/images/poster_0f39d152_d30c_455f_a94e_ee9596b9cc5b_8.jpg"
+            src="./fantastic mr fox.jpg"
             alt="Fantastic Mr Poster"
           />
           <div class="contentCard"></div>
@@ -45,20 +47,72 @@
         <section class="card">
           <img
             class="royalTenenbaums"
-            src="https://i.ebayimg.com/images/g/huoAAOSwFyFhnq7W/s-l400.jpg"
+            src="./rooyal tenenbaums.jpg"
             alt="The Royal Tenenbaums Poster"
           />
           <div class="contentCard"></div>
         </section>
+
         <section class="card">
           <img
             class="darjeelingLimited"
-            src="https://upload.wikimedia.org/wikipedia/en/1/1e/Darjeeling_Limited_Poster.jpg"
+            src="./the Darjeeling limited.jpg"
             alt="The Darjeeling Limted Poster"
           />
           <div class="contentCard"></div>
         </section>
       </div>
+      <section class="addMovie">
+        <div class="addMovieForm">
+          <h5>Add a new Film:</h5>
+          <form method="post">
+            <ul>
+              <li class="submissionList">
+                <label for="addImageURL">Image URL:</label>
+                <input
+                  type="text"
+                  id="addImageURL"
+                  name="addImageURL"
+                /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addTitle">Title:</label>
+                <input type="text" id="addTitle" name="addTitle" /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addPlot">Plot Summary (1-3 sentances):</label>
+                <input type="text" id="addPlot" name="addPlot" /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addRating">IMDB Rating:</label>
+                <input
+                  type="text"
+                  id="addRating"
+                  name="addRating"
+                /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addRuntime">Total Runtime:</label>
+                <input
+                  type="text"
+                  id="addRuntime"
+                  name="addRuntime"
+                /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addYear">Release Year:</label>
+                <input type="text" id="addYear" name="addYear" /><br /><br />
+              </li>
+              <li class="submissionList">
+                <label for="addCast">2-4 Cast members:</label>
+                <input type="text" id="addCast" name="addCast" /><br /><br />
+              </li>
+
+              <input type="submit" id="submit" value="Submit" />
+            </ul>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="moviedata.js"></script>
   </body>

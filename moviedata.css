@@ -41,6 +41,7 @@ body {
   align-items: center;
   padding: 0%;
   margin: auto;
+  
 }
 
 .card {
@@ -52,7 +53,7 @@ body {
   margin: 20px;
   margin-bottom: 5px;
   background-color: aliceblue;
-
+position: relative;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -62,15 +63,74 @@ body {
   transition: 0.5s ease;
 }
 .card:hover {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .contentCard:hover {
+  color: black;
+  cursor: pointer;
+  visibility: visible;
+}
+
+contentCard. {
+  position: absolute;
   display: block;
+bottom: 0;
+right: 0;
+background-color: transparent;
+color: transparent;
+padding-left: 10px;
+padding-right: 10px;
+visibility: hidden;
+opacity: 0;
 }
 
 .content {
   position: absolute;
   top: auto;
   transform: translate(-50% -50%);
+}
+
+.addMovie {
+  margin: 15px 15% 15px 15%;
+  padding: 0 3% 0 3%;
+  display: flex;
+  flex: 1.5;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+  align-items: stretch;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.h5 {
+  text-align: center;
+  font-size: medium;
+  align-items: center;
+}
+
+ {
+  width: 100%;
+}
+.form {
+  padding:30%
+  display: flex;
+  flex: 2;
+  align-items:content;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.row > label {
+  padding: 0.5em 2em 0.5em 0;
+  flex: 1;
+}
+
+.row > input {
+  flex: 2;
 }
